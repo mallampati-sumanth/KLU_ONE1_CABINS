@@ -327,29 +327,39 @@ const hodData = [
 ];
 
 
-  // Function to toggle between HOD and Faculty Search
-  function toggleSection(section) {
-    const hodSection = document.getElementById("hod-section");
-    const facultySection = document.getElementById("faculty-section");
-    const hodButton = document.getElementById("hod-tab");
-    const facultyButton = document.getElementById("faculty-tab");
+function toggleSection(section) {
+  const hodTab = document.getElementById("hod-tab");
+  const facultyTab = document.getElementById("faculty-tab");
+  const hodSection = document.getElementById("hod-section");
+  const facultySection = document.getElementById("faculty-section");
 
-    if (section === "hod") {
-      hodSection.style.display = "block";
-      facultySection.style.display = "none";
-      hodButton.classList.add("bg-blue-500", "text-white");
-      hodButton.classList.remove("bg-gray-200", "text-gray-700");
-      facultyButton.classList.add("bg-gray-200", "text-gray-700");
-      facultyButton.classList.remove("bg-blue-500", "text-white");
-    } else {
-      hodSection.style.display = "none";
-      facultySection.style.display = "block";
-      facultyButton.classList.add("bg-blue-500", "text-white");
-      facultyButton.classList.remove("bg-gray-200", "text-gray-700");
-      hodButton.classList.add("bg-gray-200", "text-gray-700");
-      hodButton.classList.remove("bg-blue-500", "text-white");
-    }
+  if (section === "hod") {
+    // Highlight HOD tab
+    hodTab.classList.add("bg-red-500", "text-white");
+    hodTab.classList.remove("bg-white", "text-gray-700");
+
+    // Reset Faculty tab
+    facultyTab.classList.add("bg-white", "text-gray-700");
+    facultyTab.classList.remove("bg-red-500", "text-white");
+
+    // Show HOD section and hide Faculty section
+    hodSection.style.display = "block";
+    facultySection.style.display = "none";
+  } else if (section === "faculty") {
+    // Highlight Faculty tab
+    facultyTab.classList.add("bg-red-500", "text-white");
+    facultyTab.classList.remove("bg-white", "text-gray-700");
+
+    // Reset HOD tab
+    hodTab.classList.add("bg-white", "text-gray-700");
+    hodTab.classList.remove("bg-red-500", "text-white");
+
+    // Show Faculty section and hide HOD section
+    facultySection.style.display = "block";
+    hodSection.style.display = "none";
   }
+}
+
 
   // Function to search HOD by name or department
   function searchHOD() {
