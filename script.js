@@ -5,7 +5,7 @@ const hodData = [
     name: "Dr. Suman Maloji",
     cabin: "R-403",
     facultyList: [
-  { sno: 1, name: "Dr. Suman Maloji", designation: "Professor & HOD", cabin: 101 },
+  { sno: 1, name: "Dr. Suman Maloji", designation: "Professor & HOD", cabin: "R-403" },
   { sno: 2, name: "Dr. A. S. Chandra Sekhara Sastry", designation: "Professor", cabin: 102 },
   { sno: 3, name: "Dr. Vullanki Rajesh", designation: "Professor", cabin: 103 },
   { sno: 4, name: "Dr. Habibulla Khan", designation: "Professor", cabin: 104 },
@@ -13,7 +13,7 @@ const hodData = [
   { sno: 6, name: "Dr. Chinnari Sri Kavya Korada", designation: "Professor", cabin: 106 },
   { sno: 7, name: "Dr. B.T.P. Madhav", designation: "Professor", cabin: 107 },
   { sno: 8, name: "Dr. Madhavareddy Venkata Narayana", designation: "Professor", cabin: 108 },
-  { sno: 9, name: "Dr. Immadi Govardhini", designation: "Professor", cabin: L-413 },
+  { sno: 9, name: "Dr. Immadi Govardhini", designation: "Professor", cabin: "L-413" },
   { sno: 10, name: "Dr. Kakarla Hari Kishore", designation: "Professor", cabin: 110 },
   { sno: 11, name: "Dr. Venkata Ratnam Devanaboyina", designation: "Professor", cabin: 111 },
   { sno: 12, name: "Dr. Seeram Srinivasa Rao", designation: "Professor", cabin: 112 },
@@ -21,7 +21,7 @@ const hodData = [
   { sno: 14, name: "Dr. Polurie Venkata Vijay Kishore", designation: "Professor", cabin: 114 },
   { sno: 15, name: "Dr. Pokkunuri Pardha Saradhi", designation: "Professor", cabin: 115 },
   { sno: 16, name: "Dr. Karumuri Srinivasa Rao", designation: "Professor", cabin: 116 },
-  { sno: 17, name: "Dr. Sujatha Moorthy", designation: "Professor", cabin: R-101 },
+  { sno: 17, name: "Dr. Sujatha Moorthy", designation: "Professor", cabin: "R-101" },
   { sno: 18, name: "Dr. M. Siva Ganga Prasad", designation: "Professor", cabin: 118 },
   { sno: 19, name: "Dr. Patcha Satya Srinivas Babu", designation: "Professor", cabin: 119 },
   { sno: 20, name: "Dr. Thirumuru Rama Krishna", designation: "Professor", cabin: 120 },
@@ -55,7 +55,7 @@ const hodData = [
   { sno: 48, name: "Dr. Vipul Agarwal", designation: "Associate Professor", cabin: 148 },
   { sno: 49, name: "Dr. Bhimavarapu John Philip", designation: "Associate Professor", cabin: 149 },
   { sno: 50, name: "Dr. Durga Prasad Tripathi", designation: "Associate Professor", cabin: 150 },
-    { sno: 51, name: "Dr. Bukya Balaji", designation: "Associate Professor", cabin: 151 },
+  { sno: 51, name: "Dr. Bukya Balaji", designation: "Associate Professor", cabin: 151 },
   { sno: 52, name: "Dr. Jyothi Ravi Kiran Kumar Dabbakuti", designation: "Associate Professor", cabin: 152 },
   { sno: 53, name: "Dr. M. Muzammil Parvez", designation: "Associate Professor", cabin: 153 },
   { sno: 54, name: "Dr. Chella Santhosh", designation: "Associate Professor", cabin: 154 },
@@ -443,4 +443,3 @@ function toggleSection(section) {
       resultDiv.innerHTML = `<p class="text-lg font-bold text-red-600">No faculty found in the selected department.</p>`;
     }
   }
-
